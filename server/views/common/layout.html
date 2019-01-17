@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block title %}
+
+    {% endblock %}
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no;address=no;email=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- header -->
+    {% block head %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+    <!-- body -->
+    {% block body %}
+
+    {% endblock %}
+
+    <!-- footer -->
+    <script src="{{bundle('/dolphin/static/vendor/vendor.js')}}"></script>
+    {% block footer %}
+
+    {% endblock %}
+
+</body>
+</html>
